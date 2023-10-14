@@ -2,6 +2,8 @@
 
 Un jeu de dés simple construit avec React.
 
+![Capture d'écran du jeu de dés](./public/images/screencapture-Dice-game.gif)
+
 ## Caractéristiques
 
 1. **Affichage des dés** : L'application affiche les dés et leur valeur actuelle.
