@@ -1,0 +1,80 @@
+
+/* Styles pour le conteneur du jeu */
+.game-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styles pour l'affichage des scores */
+.scores {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Style pour chaque score */
+.score {
+  margin: 0;
+}
+
+/* Style pour le joueur actuel */
+.current-player {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* Style pour le message de victoire */
+.winner-message {
+  color: #28a745; /* Vert pour le message de victoire */
+  font-size: 1.5em;
+}
+
+/* Style pour le bouton Réinitialiser */
+.reset-button,
+.player-button {
+  font-size: 1em;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Style pour le bouton Réinitialiser */
+.reset-button {
+  background-color: #dc3545; /* Rouge pour le bouton Réinitialiser */
+  color: #fff;
+}
+
+.reset-button:hover {
+  background-color: #c82333;
+}
+
+/* Styles pour les boutons des joueurs */
+.player-button {
+  margin-top: 10px;
+}
+
+/* Style pour les boutons désactivés */
+.player-button:disabled {
+  background-color: #ccc; /* Gris pour les boutons désactivés */
+  cursor: not-allowed;
+}
+
+/* Style pour le bouton du joueur actif */
+.player-button.active {
+  background-color: #007bff; /* Bleu pour le bouton du joueur actif */
+  color: #fff;
+}
+
+/* Style pour les boutons des joueurs inactifs */
+.player-button.inactive {
+  background-color: #ccc; /* Gris pour les boutons des joueurs inactifs */
+  color: #555; /* Couleur foncée pour le texte des boutons des joueurs inactifs */
+}

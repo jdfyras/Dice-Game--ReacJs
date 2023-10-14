@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #007bff;
+  --primary-hover-color: #0056b3;
+}
+
+.dice-container {
+  text-align: center;
+}
+
+.dice-total h2 {
+  font-size: 2em;
+  margin-top: 10px;
+  color: var(--primary-color);
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: transform 1s ease;
+}
+
+.rolling {
+  animation: roll 0.5s ease-in-out 0s 3;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  75% {
+    transform: rotate(540deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+img {
+  max-width: 100px;
+  height: auto;
+  margin: 10px;
+}
+
+.dice-box.clicked img {
+  transform: rotate(180deg);
+  transition: transform 1s ease;
+}
